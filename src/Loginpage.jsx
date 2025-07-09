@@ -1,5 +1,6 @@
 import { useState } from "react";
-import loginImage from "./login.jpg";
+import "./index.css";
+import login from "./login.jpg"; 
 
 export default function LoginPage({ onLogin }) {
   const [name, setName] = useState("");
@@ -9,25 +10,25 @@ export default function LoginPage({ onLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name || !email || !password) {
-      alert("Please fill all fields");
+      alert("Please fill in all fields");
       return;
     }
     onLogin({ name, email });
   };
 
   return (
-    <div className="login-container">
-      {/* Left side: image */}
-      <div className="login-image">
-        {/* <img src={loginImage} alt="Login" /> */}
-      </div>
-
-      {/* Right side: form */}
-      <div className="login-form">
-        <div className="form-box">
+    <div
+      className="login-page"
+      style={{
+        backgroundImage: `url(${login})`,
+        // backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="overlay">
+        <div className="login-card">
           <h2>Welcome Back!</h2>
           <p>Please login to continue</p>
-
           <form onSubmit={handleSubmit}>
             <input
               type="text"

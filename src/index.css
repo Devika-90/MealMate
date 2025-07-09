@@ -165,3 +165,68 @@ button:hover {
 .form-box button:hover {
   background: #ef6c00;
 }
+
+
+
+
+
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(10px); */
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  width: 300px;
+}
+
+.login-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.login-card p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.login-card input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 0.5rem;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #e64a19;
+}
