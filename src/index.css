@@ -1,13 +1,167 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Segoe UI", sans-serif;
+  background: #fff;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  text-align: center;
+}
+
+.hero {
+  background: url("https://source.unsplash.com/1600x400/?food,kitchen") no-repeat center/cover;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.meal-form {
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+}
+
+.meal-form h2 {
+  text-align: center;
+}
+
+select, textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #ef6c00;
+}
+
+.suggestions .cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 150px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8f8f8;
+  /* background: url("./login.jpg") no-repeat center center/cover; */
+}
+
+
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+  margin-bottom: 1rem;
+}
+
+.login-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.login-image {
+  flex: 1;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  background: url("https://in.pinterest.com/pin/311381761734260208/");
+  
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.form-box {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 0.5rem;
+}
+
+.form-box p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.form-box input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 0.5rem;
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-box button:hover {
+  background: #ef6c00;
 }
